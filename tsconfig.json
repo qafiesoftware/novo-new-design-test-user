@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/accountypes/AccountTypes.jsx", "src/components/funds/newaccount/NewAccount.tsx", "src/components/funds/withdraws/WithDrawsFund.tsx", "src/components/funds/withdraws/BankWithdrawsForm.tsx", "src/components/funds/withdraws/CashWithDrawsForm.tsx", "src/components/accountcards/AccountMain.tsx", "src/components/funds/Moneytransfer/TransferAccount.tsx", "src/components/TransactionHistory/TransactionHistory.jsx", "src/partner/home2/affiliateprogress/PieChartComponent.tsx", "src/partner/home2/LoyaltyTierCard.tsx", "src/components/TransactionHistory/DatePicker/DatePicker.jsx"],
+  "exclude": ["node_modules"]
+}

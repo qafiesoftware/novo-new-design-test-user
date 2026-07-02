@@ -1,0 +1,82 @@
+export const API_ENDPOINTS = {
+  AUTH: {
+    LOGIN: "/login/login.php",
+    REGISTER: "/register/register.php",
+    REGISTER_OTP_VERIFY: "/register/register_otp_verify.php",
+    RESEND_OTP: "/register/send_otp_reg.php",
+    FORGOT_PASSWORD: "/forgotpassword/forgotpassword.php",
+    RESET_PASSWORD: "/forgotpassword/reset_password.php",
+    LOG_OUT: "/login/logout.php",
+  },
+  COMMON: {
+    COUNTRIES: "/register/get_country.php",
+    MT5_ACCOUNT_LIST: "accounts/mt5_accounts_list.php",
+  },
+  CRM: {
+    GET_DASHBOARD: "/mainpages/get_dashboard.php",
+    DASHBOARD_GRAPH: "/mainpages/get_dashboard_analytics.php",
+    USER_BALANCE_DATA: "/users/get_user_bal_data.php",
+    GET_USER_DATA: "/users/get_users.php",
+    ACC_LIST_GROUP: "/accounts/list_group.php",
+    OPEN_LIVE_ACCOUNT_ADD: "/accounts/open_live_account_add.php",
+    CHANGE_MT5_PASSWORD: "/accounts/change_mt5_password.php",
+    UPDATE_MT5_NICKNAME: "accounts/update_mt5_nickname.php",
+    EKYC: "users/ekyc.php",
+    GET_KYC: "users/get_ekyc.php",
+    UPDATE_USER: "users/update_user.php",
+    CHANGE_LOGINPASSWORD: "users/change_loginpassword.php",
+    GET_ADMIN_BANK_DETAILS: "bank/get_admin_bank_details.php",
+    ADD_USER_BANK: "bank/user_bank_add.php",
+    GET_BANK_DETAILS: "bank/get_bank.php",
+    DEPOSIT_FUNDS_ADD_WALLET_BAL: "deposit/deposit_funds_add_wallet_bal.php",
+    DEPOSIT_FUNDS_ADD_WALLET_BAL_CASH: "deposit/deposit_funds_add_wallet_bal_cash.php",
+
+    GENERATE_WALLECT_BINANCE: "deposit/generate_wallet_binance.php",
+    GENERATE_WALLECT_ETHEREUM: "deposit/generate_wallet_ethereum.php",
+    GENERATE_WALLECT_POLYGON: "deposit/generate_wallet_polygon.php",
+    GENERATE_WALLECT_TRON: "deposit/generate_wallet_tron.php",
+    WITHDRAW_FUNDS_ADD_WALLET_BAL: "withdraw/withdraw_funds_add_wallet_bal.php",
+    SEND_OTP: "otp/send_otp.php",
+    WITHDRAW_FUND_ADD_WALLET_BAL_CASH: "withdraw/withdraws_funds_add_wallet_bal_cash.php",
+
+    WALLET_TRANS_TRC: "wallet_trans_trc.php",
+    WALLET_TRANS_BEP: "wallet_trans_bep.php",
+
+    WALLET_TO_MT5: "wallettomt5/wallet_to_mt5_api.php",
+    MT5_TO_WALLET: "mt5towallet/mt5_to_wallet_api.php",
+    MT5_TO_MT5_TRANSFER: "transfer_between/mt5_to_mt5_tranfer_api.php",
+
+    WITHDRAW_FUND_BY_CRYPTO: "withdraw/withdrwa_fund_withdraw_crypto_api.php",
+
+    GET_ALL_WALLET_HISTORY: "transaction_history/get_all_wallet_history.php",
+    GET_ALL_DEPOSIT_HISTORY: "transaction_history/get_all_deposit_history.php",
+    GET_ALL_WITHDRAW_HISTORY: "transaction_history/get_all_withdraw_history.php",
+    GET_ALL_TRANSFER_HISTORY: "transaction_history/get_all_transfer_history.php",
+
+    GET_ALL_ORDER_REPORT_HISTORY: "transaction_history/all_get_order_report_history.php",
+
+    GET_SUPPORT_TICKET: "support_ticket/get_support_ticket.php",
+    CREATE_SUPPORT_TICKET: "support_ticket/create_support_ticket.php",
+    ADD_REMARK_CREATE_SUPPORT_TICKET: "support_ticket/add_remark_create_support_ticket.php",
+    OPEN_SUPPORT_TICKET_LIST: "support_ticket/open_support_ticket_list.php",
+    OPEN_SUPPORT_TICKET_DETAILS: "support_ticket/details_open_support_ticket_list.php",
+  },
+  PARTNER_DASHBOARD: {
+    IB_REGISTER: "register/register_ib.php",
+    GET_PARTNER_DASHBOARD: "partner_dashboard/get_partner_dashboard.php",
+    GET_REPORT_CLIENTS: "partner_dashboard/get_report_clients.php",
+    GET_REPORT_REWARD_HISTORY: "partner_dashboard/get_report_reward_history.php",
+    GET_REBATES_CLIENT: "partner_dashboard/get_rebates_client.php",
+    GET_IB_COMMISSION: "partner_dashboard/get_ib_comm.php",
+    WITHDRAWS_IB_FUNDS_ADD_WALLET: "withdraw/withdraws_ib_funds_add_wallet.php",
+    GET_REPORT_CLIENT_TRANSACTION: "partner_dashboard/get_report_client_transaction.php",
+    GET_IB_ALL_COMMISSION: "partner_dashboard/get_ib_all_comm_history.php",
+    GET_REBATES_HISTORY: "partner_dashboard/get_rebates_history.php", // this 
+    GET_USER_PARTNER_NOTIFICATION: "partner_dashboard/get_user_partner_notification.php",
+    GET_CLIENT_ACCOUNTS: "partner_dashboard/get_client_accounts.php",
+  },
+  USER_NOTIFICATION: {
+    READ_NOTIFICATION: "users/read_user_notification.php",
+    GET_NOTIFICATION: "users/get_user_notification.php",
+  },
+} as const;

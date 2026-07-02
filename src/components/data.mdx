@@ -1,0 +1,56 @@
+
+Need to discussions with Tirth bhai: 
+
+1. Design and implement new API architecture, including graph structure, analytics, and business logic requirements.
+2. Develop data mapping with encryption and decryption mechanisms for secure data handling.
+3. Implement audit logs on the frontend side for tracking user actions and changes.
+4. Set up testing server and handle database migration on the backend.
+5. Transfer the codebase to the backend developer and conduct proper knowledge transfer (KT).
+6. Initiate discussions and integration planning for the payment gateway.
+7. existing novotrend project (vite) 
+
+/////////////////////==========
+
+import { NextRequest, NextResponse } from "next/server";
+
+const PUBLIC_ROUTES = [
+  "/sign-in",
+  "/sign-up",
+  "/forgot-password",
+  "/reset-password",
+  "/email-verify",
+];
+
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  const token = request.cookies.get("auth_token")?.value || request.cookies.get("userToken")?.value;
+
+  const isPublicRoute = PUBLIC_ROUTES.some((route) => pathname.startsWith(route));
+
+  // "/" pe hai
+  if (pathname === "/") {
+    if (token) {
+      return NextResponse.next(); // ✅ dashboard hai — allow karo
+    }
+    return NextResponse.redirect(new URL("/sign-in", request.url)); // token nahi → sign-in
+  }
+
+  // Protected route + no token → sign-in
+  if (!isPublicRoute && !token) {
+    return NextResponse.redirect(new URL("/sign-in", request.url));
+  }
+
+  // Logged in + public route → dashboard "/"
+  if (isPublicRoute && token) {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
+
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: [
+    "/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|woff|woff2|ttf|otf)).*)",
+  ],
+};

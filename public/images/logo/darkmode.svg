@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 879.22 262.97">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: CenturyGothic, 'Century Gothic';
+        font-size: 40px;
+        letter-spacing: .25em;
+      }
+
+      .cls-2 {
+        font-family: Poppins-SemiBold, Poppins;
+        font-size: 132px;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: #6553ff;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-3" points="15.49 88.04 115.19 186.56 115.19 216.78 42.43 147.5 15.49 174.45 15.49 88.04"/>
+    <polygon class="cls-3" points="115.19 160.88 15.49 62.36 15.49 32.13 88.25 101.41 115.19 74.47 115.19 160.88"/>
+  </g>
+  <text class="cls-1" transform="translate(158.25 216.75)"><tspan x="0" y="0">Future Of Global trading</tspan></text>
+  <text class="cls-2" transform="translate(151.54 168.01)"><tspan x="0" y="0">Novotrend</tspan></text>
+</svg>
