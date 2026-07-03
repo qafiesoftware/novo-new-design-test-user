@@ -2,7 +2,7 @@ import SignUpForm from "@/components/auth/SignUpForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Novotrend Test CRM",
+  title: "Novotrend CRM",
   description: "SignUp Page  Dashboard Template",
   // other metadata
 };

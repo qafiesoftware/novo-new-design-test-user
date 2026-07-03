@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import DashboardClient from "@/components/maindashboard/DashboardClient";
 
 export const metadata: Metadata = {
-  title: "Novotrend Test CRM",
+  title: "Novotrend CRM",
   description: "Future of global trading",
 };
 

@@ -2,7 +2,7 @@ import SupportChat from "@/components/support/SupportChat";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Novotrend Test CRM",
+  title: "Novotrend CRM",
   description: "Tailwind CSS Admin Dashboard Template",
   // other metadata
 };

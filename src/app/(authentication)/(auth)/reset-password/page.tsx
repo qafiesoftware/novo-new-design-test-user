@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ResetPassword Page |  - Novotrend Test CRM",
+  title: "ResetPassword Page |  - Novotrend CRM",
   description: "Future of global trading Dashboard Template",
 };
 
