@@ -21,7 +21,7 @@ export default function DashboardHome2() {
             referrals={84}
             clicks={1203}
             rate={7}
-            inviteLink="https://member.novotrend.co/sign-up"
+            inviteLink="https://novo-new-design-test-user.vercel.app/sign-up"
             data={data}
             isLoading={isLoading}
           />
